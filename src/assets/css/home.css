@@ -1,0 +1,358 @@
+.post-data-wrapper{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white !important;
+    overflow: scroll;
+}
+.post-data-wrapper::-webkit-scrollbar{
+    display: none !important;
+}
+.user-photo-wrapper{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('../images/avtar.png');
+    background-position: center;
+    background-size: contain;
+}
+.plus-icon{
+    font-size: 30px;
+    color: gray;
+}
+.input-skeleton{
+    border: 1px solid lightgray;
+    color: gray;
+    padding: 10px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    width: 100%;
+}
+.post-input{
+    width: 100%;
+}
+.extra-icon{
+    font-size: 18px;
+    color: gray;
+}
+.feed-item{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.feed-item-descripton{
+    font-size: 14px;
+    padding: 0px 14px;
+    margin-bottom: 10px;
+}
+.feed-item-image{
+    height: 260px;
+}
+.feed-post-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.feed-item-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+.feed-action-item{
+    font-size: 14px;
+}
+.feed-item-actions i{
+    font-size: 22px;
+    padding: 0px 5px;
+}
+.feed-item-title{
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.feed-edit-options{
+    display: flex;
+    align-items: center;
+}
+.feed-time{
+    font-size: 12px;
+    color: gray;
+    margin-right: 10px;
+}
+.feed-user-info-wrapper{
+    display: flex;
+}
+.user-image-info{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+.user-image-data{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.feed-user-name{
+    font-size: 16px;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.feed-user-name-unique{
+    font-size: 12px;
+    margin-left: 14px;
+    color: gray;
+}
+.feed-item-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+}
+.reactions{
+    width: 40%;
+}
+.reaction-count{
+    font-size: 14px;
+    margin-left: 10px;
+    color: gray;
+}
+.dateTime{
+    font-size: 12px;
+    color: gray;
+}
+.comment-wrapper{
+    background-color: white;
+    padding: 12px 16px;
+    margin-top: 6px;
+}
+.comment-photo-wrapper{
+    height: 40px;
+    width: 40px;
+}
+.comment-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.comment-user-detail-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+}
+.input-comment-skeleton{
+    width: 100% !important;
+    border: 1px solid gray;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.comment-user-info{
+    display: flex;
+}
+.comment-username{
+    font-size: 12px;
+    color: gray;
+}
+.comment-name{
+    font-size: 14px;
+    margin: 0px 14px;
+}
+.comment-data{
+    font-size: 14px;
+    padding: 0px 14px;
+}
+.comment-actions{
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+}
+.comment-time{
+    font-size: 14px;
+    color: gray;
+}
+.comment-like-icon{
+    font-size: 18px;
+    margin-left: 20px;
+    color: gray;
+}
+.comment-like-count{
+    font-size: 14px;
+    margin-left: 5px;
+    color: gray;
+}
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-icon{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.mobile-bottom-padding{
+    height: 60px;
+}
+/* create post overlay */
+.create-dimmer{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+}
+.create-wrapper{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-form{
+    width: 45%;
+    border-radius: 10px;
+    background-color: white;
+}
+.create-post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+.draft{
+    font-size: 14px;
+    color: gray;
+}
+.create-title{
+    font-size: 18px;
+}
+.create-post-input{
+    height: 300px;
+}
+.input-placeholder-large{
+    display: flex;
+    padding: 20px;
+}
+.placeholder-image-wrapper{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.placeholder-text{
+    font-size: 16px;
+    color: gray;
+    margin-left: 10px;
+}
+.placeholder-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.sunnah{
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+.create-post-options{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top:1px solid lightgray;
+    align-items: center;
+}
+.create-post-button{
+    all: unset;
+    text-align: center;
+    background-color: black;
+    padding: 6px 32px;
+    border-radius: 20px;
+    color: white;
+}
+.create-post-addons i{
+    color: gray;
+    font-size: 20px;
+    margin-right: 14px;    
+}
+
+/* search box */
+.search-box-container{
+    position: relative;
+}
+.search-box{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 10px;
+    left: 6px;
+    border-radius: 8px;
+
+}
+.search-box-title{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    padding-left:14px ;
+}
+.search-recommendation{
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+}
+
+@media only screen and (max-width:600px){
+    .bottom-navbar{
+        display: block;
+    }
+    .post-data-wrapper{
+        margin-top: 10px;
+        padding: 10px 0px;
+        padding-right: 6px;
+    }
+    .user-photo-wrapper{
+        display: none;
+    }
+    .clip-icon{
+        display: none;
+    }
+    .input-skeleton{
+        padding: 6px 10px;
+    }
+    .feed-user-name{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .feed-user-name-unique{
+        font-size: 10px;
+    }
+    .feed-time{
+        font-size: 10px;
+    }
+    .user-image-info{
+        height: 30px;
+        width: 30px;
+    }
+    .feed-item-descripton{
+        font-size: 12px;
+    }
+    .feed-action-item i{
+        font-size: 16px;
+    }
+    .feed-action-item{
+        font-size: 12px;
+    }
+    .action-icon{
+        font-size: 24px;
+    }
+
+    .create-post-form{
+        width: 90%;
+    }
+}
