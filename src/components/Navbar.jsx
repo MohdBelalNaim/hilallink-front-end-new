@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../assets/css/navbar.css'
 import Logo from '../assets/images/hilalLogo.png'
 import avatar from '../assets/images/avtar.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { hideSearch, showSearch } from '../redux/searchSlice'
 import { toggleProfile } from '../redux/profileSlice'
+import Notification from './Notification'
+import {Link, useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
 
 const search = useSelector(state=>state.search.shown)
 const profile = useSelector(state=>state.profile.shown)
 const dispatch = useDispatch()
+const[notification,setNotification] = useState(false)
+
+const navigate = useNavigate()
+
+function nav(){
+    navigate("/search-results")
+    dispatch(hideSearch())
+}
 
 return (
 <>
@@ -18,23 +28,25 @@ return (
         search?
         <div className="search-box">
         <div className="search-box-title">Try searching for</div>
-        <div className="search-recommendation">
+        
+        <div className="search-recommendation" onClick={()=>nav()}>
             <i className="bi bi-search"></i>
             <div>Islam</div>
         </div>
-        <div className="search-recommendation">
+
+        <div className="search-recommendation" onClick={()=>nav()}>
             <i className="bi bi-search"></i>
             <div>Quran</div>
         </div>
-        <div className="search-recommendation">
+        <div className="search-recommendation" onClick={()=>nav()}>
             <i className="bi bi-search"></i>
             <div>Muslim</div>
         </div>
-        <div className="search-recommendation">
+        <div className="search-recommendation" onClick={()=>nav()}>
             <i className="bi bi-search"></i>
             <div>Islamic scholar</div>
         </div>
-        <div className="search-recommendation">
+        <div className="search-recommendation" onClick={()=>nav()}>
             <i className="bi bi-search"></i>
             <div>Alhamdulillah</div>
         </div>
@@ -93,14 +105,29 @@ return (
                     <div className="user-profile-username-nav">@AftabIq bal</div>
                 </div>
             </div>
+            <div className="text-center nav-view-all">View all accounts</div>
         </div>
 
         <div className="settings-container-nav shadow-sm mt-3">
             <div className="nav-setting-item"> <i className="bi bi-gear-fill nav-setting-icon"></i> Profile settings</div>
             <div className="nav-setting-item"> <i className="bi bi-shield-fill-check nav-setting-icon"></i> Privacy settings</div>
             <div className="nav-setting-item"> <i className="bi bi-question-circle-fill nav-setting-icon"></i> Help center</div>
+            <div className="nav-setting-item"> <i className="bi bi-chat-quote-fill nav-setting-icon"></i> Feedback</div>
             <div className="nav-setting-item"> <i className="bi bi-power nav-setting-icon"></i> Logout</div>
         </div>
+        </div>
+        :""
+    }
+    {
+        notification?
+        <div className="notification-box">
+            <div className="notification-box-title mb-3">Notifications</div>
+            <Notification name={"Sajad khaki"} text={"Liked your post"} />
+            <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
+            <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
+            <Notification name={"Sajad khaki"} text={"Liked your post"} />
+            <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
+            <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
         </div>
         :""
     }
@@ -180,7 +207,7 @@ return (
                         <i className="bi bi-chat action-icon"></i>
                     </div>
                     <div className="action-item">
-                        <i className="bi bi-bell action-icon"></i>
+                        <i className="bi bi-bell action-icon" onClick={()=>setNotification(!notification)}></i>
                     </div>
                     <div className="action-item">
                         <div className="navbar-user-image">
