@@ -8,6 +8,7 @@ import PostDetails from './screens/PostDetails';
 import Shorts from './screens/Shorts';
 import MadarsaProfile from './screens/MadarsaProfile';
 import CampaignInfo from './screens/CampaignInfo';
+import SearchResults from './screens/SearchResults';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/clips" element={<Shorts/>} />
         <Route path="/madarsa" element={<MadarsaProfile/>} />
         <Route path="/campaign" element={<CampaignInfo/>} />
+        <Route path="/search-results" element={<SearchResults/>} />
       </Routes>
     </Router>
   );

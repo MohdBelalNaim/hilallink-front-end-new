@@ -1,0 +1,76 @@
+.search-results-card{
+    overflow: hidden;
+    border-radius: 8px;
+}
+.search-results-header{
+    display: flex;
+    background-color: #f0f1ee;
+    font-size: 14px;
+    position: sticky;
+    top: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+}   
+.search-result-type{
+    padding: 14px 20px;
+    font-weight: bold;
+}
+.search-results-body{
+    background-color: white;
+}
+.search-result-people{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid lightgray;
+}
+.follow-button{
+    all: unset;
+    background-color: black;
+    color: white;
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.search-people-img-wrapper{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+.img-fit{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.search-people-info{
+    display: flex;
+    gap: 10px;
+}
+.searched-name{
+    font-weight: bold;
+}
+.searched-username{
+    font-size: 14px;
+}
+.search-people-details{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 6px;
+}
+.searched-bio{
+    font-size: 14px;
+    color: black !important;
+    margin-top: 12px;
+}
+.search-results-footer{
+    padding: 10px 0px;
+    font-weight: bold;
+    background-color: #f0f1ee;
+}
+.result-data-wrapper{
+    padding: 0px 30px;
+}
+.result-active{
+    border-bottom: 4px solid magenta;
+}

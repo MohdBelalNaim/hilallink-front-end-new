@@ -1,7 +1,10 @@
 import React from 'react'
 import avatar from '../assets/images/avtar.png'
+import { useDispatch } from 'react-redux'
+import { hideCreate } from '../redux/createPostSlice'
 
 const CreatePost = () => {
+    const dispatch = useDispatch()
 return (
 <>
     <div className="create-dimmer"></div>
@@ -9,7 +12,7 @@ return (
         <div className="create-form animate__animated animate__bounceIn">
             <div className="create-post-header border-bottom">
                 <div className="create-header-item">
-                    <i className="bi bi-x-circle"></i>
+                    <i className="bi bi-x-circle" onClick={()=>dispatch(hideCreate())}></i>
                 </div>
                 <div className="create-header-item create-title">Create Post</div>
                 <div className="create-header-item draft">Drafts</div>

@@ -5,16 +5,18 @@ import PostWithPhoto from '../components/PostWithPhoto'
 import PostWithText from '../components/PostWithText'
 import { Link } from 'react-router-dom'
 import CreatePost from '../components/CreatePost'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { showCreate } from '../redux/createPostSlice'
 
 const Main = () => {
-const[showCreate,setShowCreate] = useState(false)
-const search = useSelector(state=>state.search.shown)
+
+  const dispatch = useDispatch()
+  const create = useSelector(state=>state.create.shown)
 
 return (
 <>
   {
-  showCreate?
+  create?
   <CreatePost />
   :""
   }
@@ -22,51 +24,10 @@ return (
   <div className="feed-wrapper">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-3 search-box-container">
-         {
-          search?
-          <div className="search-box">
-            <div className="search-box-title">Try searching for</div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Islam</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Quran</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Muslim</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Islamic scholar</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Alhamdulillah</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>MashaAllah</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Nimaz</div>
-            </div>
-            <div className="search-recommendation">
-              <i className="bi bi-search"></i>
-              <div>Zakat</div>
-            </div>
-          </div>
-          :
-          ""
-         }
-          
+        <div className="col-md-3 search-box-container"> 
         </div>
         <div className="col-md-6 px-5">
-          <div className="post-data-wrapper bg-light" onClick={()=>setShowCreate(true)}>
+          <div className="post-data-wrapper bg-light" onClick={()=>dispatch(showCreate())}>
             <div className="post-data-item">
               <div className="user-photo-wrapper">
               </div>
