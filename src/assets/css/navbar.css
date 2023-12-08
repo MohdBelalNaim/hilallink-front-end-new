@@ -25,7 +25,7 @@
 .logo-items-wrapper{
     display: flex;
     align-items: center;
-    padding: 8px 10px;
+    padding: 12px;
 }
 .logoimage{
     height: 30px;
@@ -209,6 +209,7 @@
 .action-item:hover{
     cursor: pointer;
 }
+
 @media only screen and (max-width:600px){
     .navbar-top{
         display: none;

@@ -10,7 +10,6 @@ import {Link, useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
 
-const search = useSelector(state=>state.search.shown)
 const profile = useSelector(state=>state.profile.shown)
 const dispatch = useDispatch()
 const[notification,setNotification] = useState(false)
@@ -18,61 +17,20 @@ const[notification,setNotification] = useState(false)
 const navigate = useNavigate()
 
 function nav(){
-    navigate("/search-results")
-    dispatch(hideSearch())
+navigate("/sea text-mutedrch-results")
+dispatch(hideSearch())
 }
 
 return (
 <>
     {
-        search?
-        <div className="search-box">
-        <div className="search-box-title">Try searching for</div>
-        
-        <div className="search-recommendation" onClick={()=>nav()}>
-            <i className="bi bi-search"></i>
-            <div>Islam</div>
-        </div>
-
-        <div className="search-recommendation" onClick={()=>nav()}>
-            <i className="bi bi-search"></i>
-            <div>Quran</div>
-        </div>
-        <div className="search-recommendation" onClick={()=>nav()}>
-            <i className="bi bi-search"></i>
-            <div>Muslim</div>
-        </div>
-        <div className="search-recommendation" onClick={()=>nav()}>
-            <i className="bi bi-search"></i>
-            <div>Islamic scholar</div>
-        </div>
-        <div className="search-recommendation" onClick={()=>nav()}>
-            <i className="bi bi-search"></i>
-            <div>Alhamdulillah</div>
-        </div>
-        <div className="search-recommendation">
-            <i className="bi bi-search"></i>
-            <div>MashaAllah</div>
-        </div>
-        <div className="search-recommendation">
-            <i className="bi bi-search"></i>
-            <div>Nimaz</div>
-        </div>
-        <div className="search-recommendation">
-            <i className="bi bi-search"></i>
-            <div>Zakat</div>
-        </div>
-        </div>
-        :""
-    }
-    {
-        profile?
-        <div className="profile-box">
+    profile?
+    <div className="profile-box">
         <div className="user-profiles-container shadow-sm">
             <div className="user-profile-details-wrapper">
                 <div className="user-profiles-details-section">
                     <div className="user-profile-image-wrapper-nav">
-                        <img src={avatar} alt="" className='img-fit'/>
+                        <img src={avatar} alt="" className='img-fit' />
                     </div>
                 </div>
                 <div className="user-profiles-details-section">
@@ -85,7 +43,7 @@ return (
             <div className="user-profile-details-wrapper">
                 <div className="user-profiles-details-section">
                     <div className="user-profile-image-wrapper-nav">
-                        <img src={avatar} alt="" className='img-fit'/>
+                        <img src={avatar} alt="" className='img-fit' />
                     </div>
                 </div>
                 <div className="user-profiles-details-section">
@@ -97,7 +55,7 @@ return (
             <div className="user-profile-details-wrapper mt-3">
                 <div className="user-profiles-details-section">
                     <div className="user-profile-image-wrapper-nav">
-                        <img src={avatar} alt="" className='img-fit'/>
+                        <img src={avatar} alt="" className='img-fit' />
                     </div>
                 </div>
                 <div className="user-profiles-details-section">
@@ -109,27 +67,30 @@ return (
         </div>
 
         <div className="settings-container-nav shadow-sm mt-3">
-            <div className="nav-setting-item"> <i className="bi bi-gear-fill nav-setting-icon"></i> Profile settings</div>
-            <div className="nav-setting-item"> <i className="bi bi-shield-fill-check nav-setting-icon"></i> Privacy settings</div>
-            <div className="nav-setting-item"> <i className="bi bi-question-circle-fill nav-setting-icon"></i> Help center</div>
+            <div className="nav-setting-item"> <i className="bi bi-gear-fill nav-setting-icon"></i> Profile settings
+            </div>
+            <div className="nav-setting-item"> <i className="bi bi-shield-fill-check nav-setting-icon"></i> Privacy
+                settings</div>
+            <div className="nav-setting-item"> <i className="bi bi-question-circle-fill nav-setting-icon"></i> Help
+                center</div>
             <div className="nav-setting-item"> <i className="bi bi-chat-quote-fill nav-setting-icon"></i> Feedback</div>
             <div className="nav-setting-item"> <i className="bi bi-power nav-setting-icon"></i> Logout</div>
         </div>
-        </div>
-        :""
+    </div>
+    :""
     }
     {
-        notification?
-        <div className="notification-box">
-            <div className="notification-box-title mb-3">Notifications</div>
-            <Notification name={"Sajad khaki"} text={"Liked your post"} />
-            <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
-            <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
-            <Notification name={"Sajad khaki"} text={"Liked your post"} />
-            <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
-            <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
-        </div>
-        :""
+    notification?
+    <div className="notification-box">
+        <div className="notification-box-title mb-3">Notifications</div>
+        <Notification name={"Sajad khaki"} text={"Liked your post"} />
+        <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
+        <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
+        <Notification name={"Sajad khaki"} text={"Liked your post"} />
+        <Notification name={"Khurshees ahmad khan"} text={"Commented on your post"} />
+        <Notification name={"Mohd Belal Naim"} text={"Shared your post"} />
+    </div>
+    :""
     }
     <div className="bottom-navbar">
         <div className="action-icons-wrapper">
@@ -167,51 +128,43 @@ return (
             <div className="col-lg-3">
                 <div className="logo-items-wrapper">
                     <div className="logo-item">
-
-                        {
-                        search?
-                        <i className="bi bi-x-circle" style={{"fontSize":26+"px","cursor":'pointer'}}
-                            onClick={()=>dispatch(hideSearch())}></i>
-                        :
                         <img src={Logo} className='logoimage' alt="websitelogo" />
-                        }
-                    </div>
-                    <div className="logo-item">
-                        <input type="text" className='search-input' placeholder='search'
-                            onFocus={()=>dispatch(showSearch())}/>
                     </div>
                 </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 px-5">
                 <div className="action-icons-wrapper">
                     <div className="action-icons house">
                         <i className="action-icon bi bi-house-door-fill"></i>
                     </div>
                     <div className="action-icons">
-                        <i className="action-icon bi bi-play-btn-fill"></i>
+                        <i className="action-icon bi bi-play-btn-fill text-muted"></i>
                     </div>
                     <div className="action-icons">
-                        <i className="action-icon bi bi-film"></i>
+                        <i className="action-icon bi bi-film text-muted"></i>
                     </div>
                     <div className="action-icons">
-                        <i className="action-icon bi bi-person-plus-fill"></i>
+                        <i className="action-icon bi bi-people-fill text-muted"></i>
                     </div>
-                    <div className="action-icons">
-                        <i className="action-icon bi bi-binoculars-fill"></i>
-                    </div>
+                    <Link style={{"color":"black"}} to="/explore">
+                        <div className="action-icons">
+                            <i className="action-icon bi bi-search"></i>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="col-lg-3">
                 <div className="action-center-wrapper">
                     <div className="action-item">
-                        <i className="bi bi-chat action-icon"></i>
+                        <i className="bi bi-envelope action-icon"></i>
                     </div>
                     <div className="action-item">
                         <i className="bi bi-bell action-icon" onClick={()=>setNotification(!notification)}></i>
                     </div>
                     <div className="action-item">
                         <div className="navbar-user-image">
-                            <img onClick={()=>dispatch(toggleProfile())} src={avatar} className='navbar-image-data' alt="website avatar" />
+                            <img onClick={()=>dispatch(toggleProfile())} src={avatar} className='navbar-image-data'
+                            alt="website avatar" />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,16 @@
+.search-box-wrapper{
+    background-color: white;
+    padding: 10px;
+}
+.search-page-feild{
+    border-radius: 20px !important;
+}
+.recent-search-card{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.recent-search-card i{
+    font-size: 20px;
+    padding: 10px;
+}

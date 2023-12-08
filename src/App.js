@@ -9,6 +9,8 @@ import Shorts from './screens/Shorts';
 import MadarsaProfile from './screens/MadarsaProfile';
 import CampaignInfo from './screens/CampaignInfo';
 import SearchResults from './screens/SearchResults';
+import SearchPage from './screens/SearchPage';
+import Explore from './screens/Explore';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         <Route path="/clips" element={<Shorts/>} />
         <Route path="/madarsa" element={<MadarsaProfile/>} />
         <Route path="/campaign" element={<CampaignInfo/>} />
+        <Route path="/search" element={<SearchPage/>} />
         <Route path="/search-results" element={<SearchResults/>} />
+        <Route path="/explore" element={<Explore/>} />
       </Routes>
     </Router>
   );
