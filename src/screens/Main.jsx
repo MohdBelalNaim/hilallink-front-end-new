@@ -22,7 +22,7 @@ return (
   }
   <Navbar />
   <div className="feed-wrapper">
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
         <div className="col-md-3 search-box-container"> 
         </div>
