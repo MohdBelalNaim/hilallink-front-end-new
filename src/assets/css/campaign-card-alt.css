@@ -1,0 +1,67 @@
+.campaign-card-alt-image-wrapper{
+    height: 260px;
+}
+.campaign-card-alt-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.campaign-card-alt-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.campaign-card-info-alt{
+    display: flex;
+    background-color: white;
+}
+.alt-1{
+    width:75%;
+    padding-right: 22px;
+}
+.alt-2{
+    width: 25%;
+    padding: 10px;
+}
+.donate-alt{
+    background-color: #A16ce6;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.alt-donate-title{
+    font-size: 14px;
+}
+.alt-donate-subtitle{
+    font-size: 12px;
+    color: gray;
+}
+.progress-wrapper-alt{
+    height: 6px;
+    margin-top: 8px !important;
+}
+.progress-alt{
+    height: 6px;
+}
+.campaign-card-info-alt{
+    display: flex;
+    padding: 10px;
+}
+.alt-donate-button{
+    all: unset;
+    background-color: #A16ce6;
+    color: white;
+    width: 100% !important;
+}
+.alt-fund-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 14px;
+}
+.fund-info{
+    font-size: 14px;
+}

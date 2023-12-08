@@ -19,11 +19,14 @@
     background-color: white;
 }
 .search-result-people{
-    display: flex;
-    justify-content: space-between;
     padding: 20px 10px;
     border-bottom: 1px solid lightgray;
 }
+.search-result-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
 .follow-button{
     all: unset;
     background-color: black;
@@ -93,7 +96,7 @@
     margin-top:6px;
     border-radius: 8px;
     gap: 10px;
-    padding: 10px;
+    overflow: hidden;
 }
 .clip{
     width: 33.33%;
@@ -113,11 +116,18 @@
 .clips-wrapper{
     display: flex;
     gap: 10px;
+    padding: 10px;
 }
 .view-all-link{
-    margin-top: 10px;
     text-align: center;
-    padding-top:6px;
+    padding:10px;
     cursor: pointer;
-    font-size: 14px;
+    font-weight: bold;
+    background-color: #f0f1ee;
+    border-top: 1px solid lightgray;
+}
+.search-result-header{
+    background-color: white;
+    font-size: 22px;
+    padding: 12px;
 }
