@@ -128,7 +128,7 @@ return (
             <div className="col-lg-3">
                 <div className="logo-items-wrapper">
                     <div className="logo-item">
-                        <img src={Logo} className='logoimage' alt="websitelogo" />
+                        <Link to="/home"><img src={Logo} className='logoimage' alt="websitelogo" /></Link>
                     </div>
                 </div>
             </div>
@@ -140,15 +140,17 @@ return (
                     <div className="action-icons">
                         <i className="action-icon bi bi-play-btn-fill text-muted"></i>
                     </div>
+                    <Link to="/clips">
                     <div className="action-icons">
                         <i className="action-icon bi bi-film text-muted"></i>
                     </div>
+                    </Link>
                     <div className="action-icons">
                         <i className="action-icon bi bi-people-fill text-muted"></i>
                     </div>
                     <Link style={{"color":"black"}} to="/explore">
                         <div className="action-icons">
-                            <i className="action-icon bi bi-search"></i>
+                            <i className="action-icon bi bi-search text-muted"></i>
                         </div>
                     </Link>
                 </div>

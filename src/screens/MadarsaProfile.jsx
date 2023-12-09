@@ -10,7 +10,7 @@ const MadarsaProfile = () => {
 return (
 <>
     <Navbar />
-    <div className="container-fluid">
+    <div className="container">
         <div className="row">
             <div className="col-lg-3"></div>
             <div className="col-lg-6">

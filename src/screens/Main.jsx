@@ -45,9 +45,7 @@ return (
               <i className="bi bi-film extra-icon"></i>
             </div>
           </div>
-          <Link style={{"all":"unset","cursor":"pointer"}} to="/post">
           <PostWithPhoto />
-          </Link>
           <PostWithText />
           <div className="mobile-bottom-padding"></div>
         </div>

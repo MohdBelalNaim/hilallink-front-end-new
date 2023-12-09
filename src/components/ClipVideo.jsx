@@ -14,9 +14,6 @@ const ClipVideo = (props) => {
         console.log("HEmlo")
     }
 
-    window.onscroll = function(e){
-        toggleMute()
-    }
 
     const onVideoClick = () =>{
         toggleMute()

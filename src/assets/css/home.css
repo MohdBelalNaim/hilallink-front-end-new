@@ -42,6 +42,22 @@
     background-color: white;
     border-radius: 10px;
     margin-top: 5px;
+    position: relative;
+}
+.feed-dropdown{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 46%;
+    background-color: #f6f6f6;
+}
+.feed-dropdown-actions{
+    font-size: 12px;
+    padding: 8px;
+}
+.feed-dropdown-actions:hover{
+    cursor: pointer;
+    background-color: light;
 }
 .feed-item-descripton{
     font-size: 14px;
