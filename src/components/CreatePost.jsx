@@ -12,7 +12,7 @@ return (
         <div className="create-form animate__animated animate__bounceIn">
             <div className="create-post-header border-bottom">
                 <div className="create-header-item">
-                    <i className="bi bi-x-circle" onClick={()=>dispatch(hideCreate())}></i>
+                    <i className="bi bi-x-circle" style={{"cursor":"pointer"}} onClick={()=>dispatch(hideCreate())}></i>
                 </div>
                 <div className="create-header-item create-title">Create Post</div>
                 <div className="create-header-item draft">Drafts</div>

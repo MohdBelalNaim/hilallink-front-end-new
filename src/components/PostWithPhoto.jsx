@@ -38,7 +38,7 @@ return (
         <div className="feed-title-item">
             <div className='feed-edit-options'>
                 <span className='feed-time'>42 minutes ago</span>
-                <span onClick={()=>{setDropdown(!dropdown)}}><i className="bi bi-three-dots-vertical"></i></span>
+                <span onClick={()=>{setDropdown(!dropdown)}} style={{"cursor":"pointer"}}><i className="bi bi-three-dots-vertical"></i></span>
             </div>
         </div>
     </div>

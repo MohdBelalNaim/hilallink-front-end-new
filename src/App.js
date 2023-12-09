@@ -11,12 +11,10 @@ import CampaignInfo from './screens/CampaignInfo';
 import SearchResults from './screens/SearchResults';
 import SearchPage from './screens/SearchPage';
 import Explore from './screens/Explore';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
     <Router>
-      <SpeedInsights/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/signup/basic-details" element={<BasicDetails/>} />
