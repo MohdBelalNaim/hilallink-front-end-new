@@ -10,8 +10,8 @@ import avatar from '../assets/images/avtar.png'
 const CampaignInfo = () => {
 
 const[all,setAll] = useState(false)
-const[about,setAbout] = useState(false)
-const[updates,setUpdates] = useState(true)
+const[about,setAbout] = useState(true)
+const[updates,setUpdates] = useState(false)
 const[donate,setDonate] = useState(false)
 
 function showUpdates(){
@@ -137,8 +137,7 @@ return (
                 <div className="campaign-details-header">
                   <div className="campaign-option" onClick={()=>showAbout()}> Story</div>
                   <div className="campaign-option" onClick={()=>showUpdates()}>Updates</div>
-                  <div className="campaign-option">Comments</div>
-                  <div className="campaign-option">Donors</div>
+                  <a href="#donors" style={{"textDecoration":"none","color":"white"}}><div className="campaign-option">Givers</div></a>
                 </div>
                 {
                 about?
@@ -178,7 +177,7 @@ return (
                 :""
                 }
               </div>
-              <div className="giver-card-wrapper">
+              <div className="giver-card-wrapper" id="donors">
                 <div className="giver-header text-center">Givers</div>
                 <div className="giver-card-body">
                   <DonatorCard />

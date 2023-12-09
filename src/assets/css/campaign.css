@@ -27,9 +27,7 @@
     color: white;
     font-weight: bold;
 }
-.campaign-option:nth-child(1){
-    border-bottom: 4px solid white;
-}
+
 .campaign-option{
     padding: 14px 6px;
     font-size: 14px;

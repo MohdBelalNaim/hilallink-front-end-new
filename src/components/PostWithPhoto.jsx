@@ -47,10 +47,13 @@ return (
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate recusandae consectetur natus porro
         voluptatibus dolorem quae autem modi eius dignissimos, quibusdam repellendus.
     </div>
+
+    </Link>
+    
     <div className="feed-item-image">
         <img src={feedimage} className='feed-post-image' />
     </div>
-    </Link>
+    
     <div className="feed-item-actions">
         <div className="feed-action-item">
             <i className='bi bi-hand-thumbs-up'></i> 2158
