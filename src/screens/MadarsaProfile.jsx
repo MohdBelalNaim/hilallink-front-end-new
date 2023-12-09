@@ -5,6 +5,7 @@ import PostWithPhoto from '../components/PostWithPhoto'
 import cover from '../assets/images/masjidalaqsa.jpeg'
 import avatar from '../assets/images/avtar.png'
 import CampaignCard from '../components/CampaignCard'
+import CampaignCardAlt from '../components/CampaignCardAlt'
 
 const MadarsaProfile = () => {
 return (
@@ -69,7 +70,7 @@ return (
                         <div className="madarsa-data-item">Campaign</div>
                     </div>
                 </div>
-                <CampaignCard/>
+                <CampaignCardAlt/>
 
             </div>
             <div className="col-lg-3"></div>
