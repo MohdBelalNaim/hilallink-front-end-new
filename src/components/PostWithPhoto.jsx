@@ -4,7 +4,7 @@ import feedimage from '../assets/images/masjidalaqsa.jpeg'
 import avatar from '../assets/images/avtar.png'
 import { Link } from 'react-router-dom'
 
-const PostWithPhoto = () => {
+const PostWithPhoto = (props) => {
 
     const[dropdown,setDropdown] = useState(false)
 
@@ -30,7 +30,7 @@ return (
                     </div>
                 </div>
                 <div className="feed-user-info">
-                    <div className='feed-user-name'><b>Dr. Alama</b></div>
+                    <div className='feed-user-name'><b>{props.title}</b></div>
                     <div className='feed-user-name-unique'>@DrHussainMadani</div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ return (
     </Link>
     
     <div className="feed-item-image">
-        <img src={feedimage} className='feed-post-image' />
+        <img src={props.image} className='feed-post-image' />
     </div>
     
     <div className="feed-item-actions">

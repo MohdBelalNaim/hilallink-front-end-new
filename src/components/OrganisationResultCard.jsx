@@ -2,7 +2,7 @@ import React from 'react'
 import avatar from '../assets/images/square.png'
 import { Link } from 'react-router-dom'
 
-const OrganisationResultCard = () => {
+const OrganisationResultCard = (props) => {
 return (
     <Link to="/madarsa" style={{"textDecoration":"none","color":"black"}}>
     <div className="search-result-people">
@@ -15,7 +15,7 @@ return (
                     </div>
                 </div>
                 <div className="search-people-details">
-                    <div className="searched-name">Dr. Alama Madani</div>
+                    <div className="searched-name">{props.title}</div>
                     <div className="searched-username text-muted">@DrHussainMadani</div>
                 </div>
             </div>

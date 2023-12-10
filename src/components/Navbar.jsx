@@ -74,7 +74,7 @@ return (
             <div className="nav-setting-item"> <i className="bi bi-question-circle-fill nav-setting-icon"></i> Help
                 center</div>
             <div className="nav-setting-item"> <i className="bi bi-chat-quote-fill nav-setting-icon"></i> Feedback</div>
-            <div className="nav-setting-item"> <i className="bi bi-power nav-setting-icon"></i> Logout</div>
+            <Link to="/" style={{"color":"black","textDecoration":"none"}}><div className="nav-setting-item"> <i className="bi bi-power nav-setting-icon"></i> Logout</div></Link>
         </div>
     </div>
     :""
@@ -157,9 +157,11 @@ return (
             </div>
             <div className="col-lg-3">
                 <div className="action-center-wrapper">
+                    <Link style={{"color":"black"}} to="/messages">
                     <div className="action-item">
                         <i className="bi bi-envelope action-icon"></i>
                     </div>
+                    </Link>
                     <div className="action-item">
                         <i className="bi bi-bell action-icon" onClick={()=>setNotification(!notification)}></i>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import avatar from '../assets/images/avtar.png'
 
-const SearchResultCard = () => {
+const SearchResultCard = (props) => {
 return (
 <div className="search-result-people">
     <div className="search-result-wrapper">
@@ -13,7 +13,7 @@ return (
                     </div>
                 </div>
                 <div className="search-people-details">
-                    <div className="searched-name">Dr. Alama Madani</div>
+                    <div className="searched-name">{props.title}</div>
                     <div className="searched-username text-muted">@DrHussainMadani</div>
                 </div>
             </div>

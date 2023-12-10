@@ -121,7 +121,7 @@ return (
                 Forgot Password
               </span>
             </div>
-            <button id="custom-button">Login</button>
+            <Link to="/home" style={{"textDecoration":"none"}}><button id="custom-button">Login</button></Link>
             <div className="or-section mt-3">
               <span class="lines"></span>
               <span>or</span>

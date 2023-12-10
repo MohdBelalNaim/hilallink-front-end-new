@@ -1,0 +1,49 @@
+.message-search-container{
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.message-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.all-messages{
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.message-image-wrapper{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+.message-username{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.message-lastText{
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+}
+.message-type-container{
+    display: flex;
+    padding: 10px;
+}
+.message-type-pill{
+    font-size: 12px;
+    background-color: rgb(235, 233, 233);
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-right: 14px;
+}
+.message-type-pill:hover{
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px 9px;
+    cursor: pointer;
+}

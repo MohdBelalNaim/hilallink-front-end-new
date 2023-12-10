@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom'
 import CreatePost from '../components/CreatePost'
 import { useDispatch, useSelector } from 'react-redux'
 import { showCreate } from '../redux/createPostSlice'
+import img1 from '../assets/images/img1.jpg'
+import img2 from '../assets/images/img2.jpg'
+import img3 from '../assets/images/img3.jpg'
+import img4 from '../assets/images/masjidalaqsa.jpeg'
+import OrganisationPostCard from '../components/OrganisatonPostCard'
 
 const Main = () => {
 
@@ -45,7 +50,15 @@ return (
               <i className="bi bi-film extra-icon"></i>
             </div>
           </div>
-          <PostWithPhoto />
+          <PostWithPhoto image={img4} title={"Dr. Alama Hussain Madani"}/>
+          <OrganisationPostCard image={img1} title={"Dr. Alama Hussain Madani"}/>
+          <PostWithText />
+          <PostWithText />
+          <PostWithPhoto image={img2} title={"Khursheed Ahmad Khan"}/>
+          <PostWithText />
+          <PostWithText />
+          <PostWithPhoto image={img3} title={"Sajad Khaki"}/>
+          <PostWithText />
           <PostWithText />
           <div className="mobile-bottom-padding"></div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/css/signup.css'
 import Avatar from '../../assets/images/avtar.png'
-
+import {Link} from 'react-router-dom'
 const UserName = () => {
 return (
 <div id="signup-wrapper" className=' signup-wrapper-username'>
@@ -17,7 +17,7 @@ return (
             <div class="custom-input input-username mt-4">
                 <input type="text" class="custom-input-field no-icons" placeholder='Choose username' />
             </div>
-            <button id="custom-button">Finish</button>
+            <Link style={{"textDecoration":"none"}} to="/home"><button id="custom-button">Finish</button></Link>
         </div>
         <div className="col-lg-4"></div>
     </div>

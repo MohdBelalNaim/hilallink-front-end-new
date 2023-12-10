@@ -1,0 +1,23 @@
+.community-cover-image-wrapper{
+    height: 200px;
+    background-color: red;
+}
+.community-cover-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.community-info{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.members-count{
+    font-size: 14px;
+}
+.community-bio{
+    font-size: 14px;
+    margin-top: 10px;
+}

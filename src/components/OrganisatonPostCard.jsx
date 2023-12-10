@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import '../assets/css/home.css'
 import feedimage from '../assets/images/masjidalaqsa.jpeg'
-import avatar from '../assets/images/avtar.png'
+import avatar from '../assets/images/square.png'
+import { Link } from 'react-router-dom'
 
-const PostWithText = () => {
+const OrganisationPostCard = (props) => {
 
     const[dropdown,setDropdown] = useState(false)
+
 return (
 <div className="feed-item">
-    {   
+    {
         dropdown?
         <div className="feed-dropdown rounded shadow bg-light px-2 py-2">
             <div className="feed-dropdown-actions"> <i className='bi bi-bookmark-fill' style={{"marginRight":6+"px"}}></i> Save Post</div>
@@ -23,12 +25,12 @@ return (
         <div className="feed-title-item">
             <div className="feed-user-info-wrapper">
                 <div className="feed-user-info">
-                    <div className="user-image-info">
+                    <div className="user-image-info img-square">
                         <img src={avatar} className='user-image-data' />
                     </div>
                 </div>
                 <div className="feed-user-info">
-                    <div className='feed-user-name'><b>Dr. Alama Hussain Madani</b></div>
+                    <div className='feed-user-name'><b>{props.title}</b></div>
                     <div className='feed-user-name-unique'>@DrHussainMadani</div>
                 </div>
             </div>
@@ -40,11 +42,19 @@ return (
             </div>
         </div>
     </div>
+    <Link style={{"textDecoration":"none","color":"black"}} to="/post">
     <div className="feed-item-descripton">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate recusandae consectetur natus porro
         voluptatibus dolorem quae autem modi eius dignissimos, quibusdam repellendus.
     </div>
-    <div className="feed-item-actions border-top">
+
+    </Link>
+    
+    <div className="feed-item-image">
+        <img src={props.image} className='feed-post-image' />
+    </div>
+    
+    <div className="feed-item-actions">
         <div className="feed-action-item">
             <i className='bi bi-hand-thumbs-up'></i> 2158
         </div>
@@ -62,4 +72,4 @@ return (
 )
 }
 
-export default PostWithText
+export default OrganisationPostCard

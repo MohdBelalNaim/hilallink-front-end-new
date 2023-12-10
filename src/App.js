@@ -11,6 +11,8 @@ import CampaignInfo from './screens/CampaignInfo';
 import SearchResults from './screens/SearchResults';
 import SearchPage from './screens/SearchPage';
 import Explore from './screens/Explore';
+import Messages from './screens/Messages';
+import CommunityProfile from './screens/CommunityProfile';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/search" element={<SearchPage/>} />
         <Route path="/search-results" element={<SearchResults/>} />
         <Route path="/explore" element={<Explore/>} />
+        <Route path="/messages" element={<Messages/>} />
+        <Route path="/community" element={<CommunityProfile/>} />
       </Routes>
     </Router>
   );

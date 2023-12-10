@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CommunityResultCard = () => {
+const CommunityResultCard = (props) => {
   return (
     <div className="search-result-people">
     <div className="search-result-wrapper">
@@ -12,13 +12,13 @@ const CommunityResultCard = () => {
                     </div>
                 </div>
                 <div className="search-people-details">
-                    <div className="searched-name">Dr. Alama Madani</div>
+                    <div className="searched-name">{props.title}</div>
                     <div className="searched-username text-muted">@DrHussainMadani</div>
                 </div>
             </div>
         </div>
         <div className="people-result-section">
-            <button className="follow-button">Following</button>
+            <button className="follow-button">Join</button>
         </div>
     </div>
     <div className="searched-bio px-1">
