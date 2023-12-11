@@ -135,12 +135,16 @@ return (
             </div>
             <div className="col-lg-6 px-5">
                 <div className="action-icons-wrapper">
+                    <Link to="/home" style={{"color":"black"}}>
                     <div className="action-icons house">
                         <i className="action-icon bi bi-house-door-fill"></i>
                     </div>
+                    </Link>
+                    <Link to="/videos">
                     <div className="action-icons">
                         <i className="action-icon bi bi-play-btn-fill text-muted"></i>
                     </div>
+                    </Link>
                     <Link to="/clips">
                     <div className="action-icons">
                         <i className="action-icon bi bi-film text-muted"></i>

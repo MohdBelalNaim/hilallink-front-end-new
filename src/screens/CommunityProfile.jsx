@@ -52,20 +52,9 @@ return (
               Refrain from posting repetitive content, advertisements or spam, keep the group clutter-free
             </div>
           </div>
-          <div className="community-rule-item">
-            <div className="community-rule-title">Credible Sources</div>
-            <div className="community-rule-info">
-              When sharing information, provide credible sources to enhance the reliability of the content
-            </div>
-          </div>
-          <div className="community-rule-item">
-            <div className="community-rule-title">No Promotions Without Approval</div>
-            <div className="community-rule-info">
-              Seek permission from group moderators before promoting any events, products or services within the group.
-            </div>
-          </div>
         </div>
-        <div className="community-accept-button">
+        <div className="read-more-rules" style={{"color":"#A16CE6","cursor":"pointer"}}>Read All Rules</div>
+        <div className="community-accept-button" onClick={()=>setRules(false)}>
           Agree and join
         </div>
     </div>
