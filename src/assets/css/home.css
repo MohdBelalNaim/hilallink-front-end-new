@@ -354,4 +354,7 @@
     .main-wrapper{
         padding: 0px 10px;
     }
+    .feed-dropdown{
+        width: 60%;
+    }
 }

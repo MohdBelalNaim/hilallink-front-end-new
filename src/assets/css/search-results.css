@@ -132,3 +132,14 @@
     font-size: 22px;
     padding: 12px;
 }
+@media only screen and (max-width:600px){
+    .result-data-wrapper{
+        padding: 0px 0px;
+    }
+    .search-results-header{
+        top: 0px !important;
+    }
+    .result-search-feild-wrapper{
+        margin-top: 0px;
+    }
+}
