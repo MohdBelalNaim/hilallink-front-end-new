@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import '../assets/css/community.css'
 import img1 from '../assets/images/masjidalaqsa.jpeg'
@@ -7,13 +7,18 @@ import PostWithPhoto from '../components/PostWithPhoto'
 import img3 from '../assets/images/img3.jpg'
 
 const CommunityProfile = () => {
+  const[rules,setRules] = useState(false)
+
 return (
 <>
+  {
+    rules?
+    <>
   <div className="community-rules-overlay"></div>
   <div className="community-rules-container">
-    <div className="community-rules-card">
+    <div className="community-rules-card animate__animated animate__bounceIn">
         <div className="community-rules-header">
-          <i className="bi bi-x-circle"></i>
+          <i className="bi bi-x-circle" onClick={()=>setRules(false)} style={{"cursor":"pointer"}}></i>
           <span>Review and Agree the <span style={{"color":"#A16CE6"}}>community rules</span></span>
         </div>
         <div className="community-rules-body">
@@ -65,6 +70,9 @@ return (
         </div>
     </div>
   </div>
+  </>
+  :""
+  }
   <Navbar />
   <div className="container">
     <div className="row gx-0">
@@ -86,7 +94,7 @@ return (
             <div className="community-info-section">
               <i className="bi bi-three-dots-vertical madarsa-notification"></i>
               <i className="bi bi-bell madarsa-notification"></i>
-              <button className="madarsa-follow-button">Join</button>
+              <button className="madarsa-follow-button" onClick={()=>setRules(true)}>Join</button>
             </div>
           </div>
         </div>
