@@ -59,3 +59,11 @@
 .community-rule-title{
     font-weight: bold;
 }
+.community-accept-button{
+    background-color: #A16CE6;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 14px 0px;
+}

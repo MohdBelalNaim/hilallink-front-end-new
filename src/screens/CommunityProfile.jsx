@@ -48,17 +48,20 @@ return (
             </div>
           </div>
           <div className="community-rule-item">
-            <div className="community-rule-title">Respectful Dialogue</div>
+            <div className="community-rule-title">Credible Sources</div>
             <div className="community-rule-info">
-              Engage in respectful and constructive discussions. Disagreement are natural, but express your opinions ourteously
+              When sharing information, provide credible sources to enhance the reliability of the content
             </div>
           </div>
           <div className="community-rule-item">
-            <div className="community-rule-title">Respectful Dialogue</div>
+            <div className="community-rule-title">No Promotions Without Approval</div>
             <div className="community-rule-info">
-              Engage in respectful and constructive discussions. Disagreement are natural, but express your opinions ourteously
+              Seek permission from group moderators before promoting any events, products or services within the group.
             </div>
           </div>
+        </div>
+        <div className="community-accept-button">
+          Agree and join
         </div>
     </div>
   </div>
