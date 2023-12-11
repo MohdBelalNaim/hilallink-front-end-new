@@ -10,9 +10,9 @@ import PostWithText from '../components/PostWithText'
 
 
 const UserProfile = () => {
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
 return (
 <>
     <Navbar />
@@ -55,6 +55,25 @@ return (
 
                             Nurturing hearts and minds in the light of Quranic wisdom since 1980. Embracing knowledge,
                             faith, and community. 📖🌟 #MadarsaHanfiya
+                        </div>
+
+                        <div className="mobile-info-wrapper">
+                            <div className="row gx-0 gy-0">
+                                <div className="col-lg-6 col-6 mobile-org-type">
+                                    <i className='bi bi-grid-fill'></i> Religious
+                                    institution
+                                </div>
+                                <div className="col-lg-6 col-6 mobile-org-type">
+                                <i className="bi bi-geo-alt-fill"></i> Lucknow, India
+                                </div>
+                                <div className="col-lg-6 col-6 mobile-org-type">
+                                <i className="bi bi-box-arrow-up-right"></i> www.mhzquran.com
+                                </div>
+                                <div className="col-lg-6 col-6 mobile-org-type">
+                                    <i className='bi bi-clock-history'></i> Joined on 11-10-2023
+                                </div>
+
+                            </div>
                         </div>
                         <div className="madarsa-type-info-wrapper">
                             <div className="madarsa-type-info"> <i className='bi bi-grid-fill'></i> Religious
