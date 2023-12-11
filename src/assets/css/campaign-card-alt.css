@@ -65,7 +65,12 @@
 .fund-info{
     font-size: 14px;
 }
-
+.mobile-raised-info-wrapper{
+    display: none;
+}
+.mobile-campaign-info{
+    display: none;
+}
 @media only screen and (max-width:600px){
     .alt-fund-info{
         display: none;
