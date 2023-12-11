@@ -298,7 +298,9 @@
     font-size: 20px;
     margin-right: 14px;    
 }
-
+.main-wrapper{
+    padding: 0px 52px;
+}
 
 
 @media only screen and (max-width:600px){
@@ -348,5 +350,8 @@
 
     .create-post-form{
         width: 90%;
+    }
+    .main-wrapper{
+        padding: 0px 10px;
     }
 }

@@ -31,7 +31,7 @@ return (
       <div className="row">
         <div className="col-md-3 search-box-container"> 
         </div>
-        <div className="col-md-6 px-5">
+        <div className="col-md-6 main-wrapper">
           <div className="post-data-wrapper bg-light" onClick={()=>dispatch(showCreate())}>
             <div className="post-data-item">
               <div className="user-photo-wrapper">

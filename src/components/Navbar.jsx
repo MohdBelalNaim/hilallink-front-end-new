@@ -7,6 +7,7 @@ import { hideSearch, showSearch } from '../redux/searchSlice'
 import { toggleProfile } from '../redux/profileSlice'
 import Notification from './Notification'
 import {Link, useNavigate} from 'react-router-dom'
+import $ from 'jquery'
 
 const Navbar = () => {
 
@@ -21,6 +22,16 @@ navigate("/sea text-mutedrch-results")
 dispatch(hideSearch())
 }
 
+
+var links = document.getElementsByClassName("action-icons")
+function setActive(path){
+   for(var i=0;i<links.length;i++){
+    if(links[i].classList.contains("house")){
+        links[i].classList.toggle("house")
+    }
+   }
+   document.getElementById(path).classList.add("house")
+}
 return (
 <>
     {
@@ -135,31 +146,35 @@ return (
             </div>
             <div className="col-lg-6 px-5">
                 <div className="action-icons-wrapper">
-                    <Link to="/home" style={{"color":"black"}}>
+                    <Link to="/home" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons house">
                         <i className="action-icon bi bi-house-door-fill"></i>
                     </div>
-                    </Link>
-                    <Link to="/videos">
+                    </Link> 
+                    
+                    <Link to="/videos" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons">
                         <i className="action-icon bi bi-play-btn-fill text-muted"></i>
                     </div>
-                    </Link>
-                    <Link to="/clips">
+                    </Link> 
+                    <Link to="/clips" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons">
                         <i className="action-icon bi bi-film text-muted"></i>
                     </div>
                     </Link>
-                    <Link to="/communities">
+                    
+                    <Link to="/communities" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons">
                         <i className="action-icon bi bi-people-fill text-muted"></i>
                     </div>
                     </Link>
-                    <Link style={{"color":"black"}} to="/explore">
-                        <div className="action-icons">
-                            <i className="action-icon bi bi-search text-muted"></i>
-                        </div>
+                    
+                    <Link to="/explore" style={{"textDecoration":"none","color":"black"}}>
+                    <div className="action-icons">
+                        <i className="action-icon bi bi-search text-muted"></i>
+                    </div>
                     </Link>
+                    
                 </div>
             </div>
             <div className="col-lg-3">
