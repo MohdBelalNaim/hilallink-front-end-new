@@ -95,6 +95,9 @@
     border-radius: 10px;
     overflow: hidden;
 }
+.mobile-profile-action-wrapper{
+    display: none;
+}
 @media only screen and (max-width:600px){
     .notification-user-page{
         display: none;
@@ -123,4 +126,43 @@
     .madarsa-username{
         font-size: 12px;
     }
+    .madarsa-data-item{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .madarsa-data-content-wrapper{
+        overflow: scroll;
+    }
+    .madarsa-data-content-wrapper::-webkit-scrollbar{
+        display: none;
+    }
+    .profile-posts{
+        padding: 0px 6px;
+    }
+    .madarsa-info-wrapper{
+        padding: 10px 14px;
+    }
+    .mobile-profile-action-wrapper{
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-profile-action-wrapper i{
+        margin: 0px;
+        background-color: #dae0f1;
+        padding: 6px 10px;
+        border-radius: 50%;
+    }
+    .mobile-follow-button{
+        all: unset;
+        background-color: black;
+        width: 70%;
+        color: white;
+        text-align: center;
+        padding: 8px 0px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
 }

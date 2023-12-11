@@ -65,20 +65,29 @@ return (
                             <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right"></i>
                                 www.mhzquran.com</div>
                         </div>
+
+
+                        <div className="mobile-profile-action-wrapper">
+                            <button className="mobile-follow-button">Follow</button>
+                            <i className="bi bi-bell-fill mobile-notification-icon"></i>
+                            <i className="bi bi-three-dots-vertical mobile-notification-icon"></i>
+                        </div>
                     </div>
 
                     <div className="madarsa-data-content-wrapper">
-                        <div className="madarsa-data-item active-madarsa-item">Home</div>
+                        <div className="madarsa-data-item">Home</div>
                         <div className="madarsa-data-item">Posts</div>
                         <div className="madarsa-data-item">Videos</div>
                         <div className="madarsa-data-item">Clips</div>
                         <div className="madarsa-data-item">Campaign</div>
                     </div>
                 </div>
+                <div className="profile-posts">
                     <PostWithPhoto title={"Dr. Alama Hussain Madani"} image={img1} />
                     <PostWithPhoto title={"Dr. Alama Hussain Madani"} image={img2} />
                     <PostWithText />
                     <PostWithText />
+                </div>
 
             </div>
             <div className="col-lg-3"></div>
