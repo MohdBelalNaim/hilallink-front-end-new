@@ -3,11 +3,11 @@ import Navbar from '../components/Navbar'
 import '../assets/css/madarsa-profile.css'
 import PostWithPhoto from '../components/PostWithPhoto'
 import cover from '../assets/images/masjidalaqsa.jpeg'
-import avatar from '../assets/images/square.png'
+import avatar from '../assets/images/avtar.png'
 import CampaignCard from '../components/CampaignCard'
 import CampaignCardAlt from '../components/CampaignCardAlt'
 
-const MadarsaProfile = () => {
+const UserProfile = () => {
     useEffect(()=>{
         window.scrollTo(0,0)
     },[])
@@ -46,10 +46,10 @@ return (
                         </div>
                     </div>
                     <div className="madarsa-info-wrapper">
-                        <div className="madarsa-title">Madarsa Hanfiya Zyaul Quran</div>
-                        <div className="madarsa-username">@HanfiyaZiaulQuraan</div>
+                        <div className="madarsa-title">Dr. Alama Hussain Madani</div>
+                        <div className="madarsa-username">@DrHussainMadani</div>
                         <div className="madarsa-bio">
-                            Official account of Madarsa Hanfiya Zyaul Quran.
+                            Official account of Dr. Alama Hussain Madani.
 
                             Nurturing hearts and minds in the light of Quranic wisdom since 1980. Embracing knowledge,
                             faith, and community. 📖🌟 #MadarsaHanfiya
@@ -84,4 +84,4 @@ return (
 )
 }
 
-export default MadarsaProfile
+export default UserProfile

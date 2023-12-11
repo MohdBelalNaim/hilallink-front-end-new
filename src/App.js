@@ -13,6 +13,8 @@ import SearchPage from './screens/SearchPage';
 import Explore from './screens/Explore';
 import Messages from './screens/Messages';
 import CommunityProfile from './screens/CommunityProfile';
+import UserProfile from './screens/UserProfile';
+import Communities from './screens/Communities';
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/explore" element={<Explore/>} />
         <Route path="/messages" element={<Messages/>} />
         <Route path="/community" element={<CommunityProfile/>} />
+        <Route path="/communities" element={<Communities/>} />
+        <Route path="/user" element={<UserProfile/>} />
       </Routes>
     </Router>
   );

@@ -51,7 +51,7 @@ return (
             </div>
           </div>
           <PostWithPhoto image={img4} title={"Dr. Alama Hussain Madani"}/>
-          <OrganisationPostCard image={img1} title={"Dr. Alama Hussain Madani"}/>
+          <OrganisationPostCard image={img1} title={"Madarsa Hanfiya Zyaul Quran"}/>
           <PostWithText />
           <PostWithText />
           <PostWithPhoto image={img2} title={"Khursheed Ahmad Khan"}/>

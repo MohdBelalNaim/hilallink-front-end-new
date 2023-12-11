@@ -129,6 +129,7 @@ return (
                 <div className="logo-items-wrapper">
                     <div className="logo-item">
                         <Link to="/home"><img src={Logo} className='logoimage' alt="websitelogo" /></Link>
+                        <Link to="/home" style={{"color":"black"}}><span style={{"fontSize":18+"px","position":"relative","left":10+"px","top":2+"px"}}>HilalLink</span></Link>
                     </div>
                 </div>
             </div>
@@ -145,9 +146,11 @@ return (
                         <i className="action-icon bi bi-film text-muted"></i>
                     </div>
                     </Link>
+                    <Link to="/communities">
                     <div className="action-icons">
                         <i className="action-icon bi bi-people-fill text-muted"></i>
                     </div>
+                    </Link>
                     <Link style={{"color":"black"}} to="/explore">
                         <div className="action-icons">
                             <i className="action-icon bi bi-search text-muted"></i>

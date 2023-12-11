@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CommunityResultCard = (props) => {
   return (
@@ -12,7 +13,7 @@ const CommunityResultCard = (props) => {
                     </div>
                 </div>
                 <div className="search-people-details">
-                    <div className="searched-name">{props.title}</div>
+                    <Link to="/community" style={{"color":"black","textDecoration":"none"}}><div className="searched-name">{props.title}</div></Link>
                     <div className="searched-username text-muted">@DrHussainMadani</div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ return (
                     </div>
                 </div>
                 <div className="feed-user-info">
-                    <div className='feed-user-name'><b>{props.title}</b></div>
+                    <div className='feed-user-name'><Link to="/madarsa" style={{"textDecoration":"none","color":"black"}}><b>{props.title}</b></Link></div>
                     <div className='feed-user-name-unique'>@DrHussainMadani</div>
                 </div>
             </div>

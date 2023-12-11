@@ -1,6 +1,5 @@
 .community-cover-image-wrapper{
     height: 200px;
-    background-color: red;
 }
 .community-cover-image{
     height: 100%;
@@ -20,4 +19,43 @@
 .community-bio{
     font-size: 14px;
     margin-top: 10px;
+}
+.community-rules-overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 9999999;
+}
+.community-rules-container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.community-rules-card{
+    width: 40%;
+    background-color: white;
+    margin-top: 60px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.community-rules-header{
+    display: flex;
+    gap: 26px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+}
+.community-rule-item{
+    font-size: 14px;
+    padding: 10px 20px;
+}
+.community-rule-title{
+    font-weight: bold;
 }

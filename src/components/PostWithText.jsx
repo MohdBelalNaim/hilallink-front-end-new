@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../assets/css/home.css'
 import feedimage from '../assets/images/masjidalaqsa.jpeg'
 import avatar from '../assets/images/avtar.png'
+import { Link } from 'react-router-dom'
 
 const PostWithText = () => {
 
@@ -28,7 +29,7 @@ return (
                     </div>
                 </div>
                 <div className="feed-user-info">
-                    <div className='feed-user-name'><b>Dr. Alama Hussain Madani</b></div>
+                    <div className='feed-user-name'><Link to="/user" style={{"textDecoration":"none","color":"black"}}><b>Dr. Alama Hussain Madani</b></Link></div>
                     <div className='feed-user-name-unique'>@DrHussainMadani</div>
                 </div>
             </div>
