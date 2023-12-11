@@ -23,15 +23,6 @@ dispatch(hideSearch())
 }
 
 
-var links = document.getElementsByClassName("action-icons")
-function setActive(path){
-   for(var i=0;i<links.length;i++){
-    if(links[i].classList.contains("house")){
-        links[i].classList.toggle("house")
-    }
-   }
-   document.getElementById(path).classList.add("house")
-}
 return (
 <>
     {
@@ -147,7 +138,7 @@ return (
             <div className="col-lg-6 px-5">
                 <div className="action-icons-wrapper">
                     <Link to="/home" style={{"textDecoration":"none","color":"black"}}>
-                    <div className="action-icons house">
+                    <div className="action-icons">
                         <i className="action-icon bi bi-house-door-fill"></i>
                     </div>
                     </Link> 
@@ -169,7 +160,7 @@ return (
                     </div>
                     </Link>
                     
-                    <Link to="/explore" style={{"textDecoration":"none","color":"black"}}>
+                    <Link to="/videos" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons">
                         <i className="action-icon bi bi-search text-muted"></i>
                     </div>

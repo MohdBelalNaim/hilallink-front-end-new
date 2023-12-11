@@ -4,8 +4,10 @@ import '../assets/css/madarsa-profile.css'
 import PostWithPhoto from '../components/PostWithPhoto'
 import cover from '../assets/images/masjidalaqsa.jpeg'
 import avatar from '../assets/images/avtar.png'
-import CampaignCard from '../components/CampaignCard'
-import CampaignCardAlt from '../components/CampaignCardAlt'
+import img1 from '../assets/images/img1.jpg'
+import img2 from '../assets/images/img2.jpg'
+import PostWithText from '../components/PostWithText'
+
 
 const UserProfile = () => {
     useEffect(()=>{
@@ -17,7 +19,7 @@ return (
     <div className="container">
         <div className="row">
             <div className="col-lg-3"></div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 user-main-wrapper">
                 <div className="madarsa-details">
                     <div className="madarsa-cover">
                         <div className="madarsa-basics">
@@ -38,8 +40,8 @@ return (
                                     </div>
                                 </div>
                                 <div className="madarsa-follower-item">
-                                    <i className="bi bi-bell madarsa-notification"></i>
-                                    <button className="madarsa-follow-button"> <i
+                                    <i className="bi bi-bell madarsa-notification notification-user-page"></i>
+                                    <button className="madarsa-follow-button notification-user-page"> <i
                                             className="bi bi-person-plus-fill px-1"></i> Follow</button>
                                 </div>
                             </div>
@@ -73,7 +75,10 @@ return (
                         <div className="madarsa-data-item">Campaign</div>
                     </div>
                 </div>
-                <CampaignCardAlt/>
+                    <PostWithPhoto title={"Dr. Alama Hussain Madani"} image={img1} />
+                    <PostWithPhoto title={"Dr. Alama Hussain Madani"} image={img2} />
+                    <PostWithText />
+                    <PostWithText />
 
             </div>
             <div className="col-lg-3"></div>

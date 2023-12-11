@@ -95,3 +95,32 @@
     border-radius: 10px;
     overflow: hidden;
 }
+@media only screen and (max-width:600px){
+    .notification-user-page{
+        display: none;
+    }
+    .madarsa-cover-image-wrapper{
+        height: 200px;
+    }
+    .madarsa-dp-wrapper{
+        height: 70px;
+        width: 70px;
+    }
+    .user-main-wrapper{
+        padding: 0px !important;
+    }
+    .madarsa-details{
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    .madarsa-bio{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .madarsa-title{
+        font-size: 16px;
+    }
+    .madarsa-username{
+        font-size: 12px;
+    }
+}
