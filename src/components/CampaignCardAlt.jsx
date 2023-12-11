@@ -17,9 +17,22 @@ const CampaignCardAlt = () => {
           <div className="alt-donate-subtitle">
             hilallink.com/ummagive/HanfiyaZiaulQUran
           </div>
+          <div className="mobile-campaign-info">
+          <div className="mobile-campaign-info-section">602 <span style={{"color":"gray"}}>Donors</span></div>
+          <div className="mobile-campaign-info-section">18 <span style={{"color":"gray"}}>Days left</span></div>
+        </div>
           <div className="donate-alt-progress">
             <div className="madarsa-progress-wrapper progress-wrapper-alt">
               <div className="madarsa-progress progress-alt"></div>
+            </div>
+          </div>
+          <div className="mobile-raised-info-wrapper">
+            <div className="mobile-raised-info-section">
+              <div className='mobile-total'>₹ 13,20,000</div>
+              <div className='mobile-subtotal'>raised of ₹20,00,000</div>
+            </div>
+            <div className="mobile-raised-info-section">
+              <button className="donate-alt mobile-donate-btn">Give</button>
             </div>
           </div>
         </div>
@@ -28,6 +41,7 @@ const CampaignCardAlt = () => {
           <Link to="/campaign"><button className="donate-alt">Donate</button></Link>
         </div>
       </div>
+      
       <div className="alt-fund-info pb-3">
             <div className="alt-fund-info-sections fund-info" style={{"paddingLeft":10+'px'}}>
               13,20,000 <span className='text-muted'> raised of 20,00,000</span>
