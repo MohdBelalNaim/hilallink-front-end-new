@@ -160,7 +160,7 @@ return (
                     </div>
                     </Link>
                     
-                    <Link to="/videos" style={{"textDecoration":"none","color":"black"}}>
+                    <Link to="/explore" style={{"textDecoration":"none","color":"black"}}>
                     <div className="action-icons">
                         <i className="action-icon bi bi-search text-muted"></i>
                     </div>

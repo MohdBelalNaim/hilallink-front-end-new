@@ -10,7 +10,7 @@ const Videos = () => {
     <div className="container">
         <div className="row gx-0 py-2">
             <div className="col-lg-3"></div>
-            <div className="col-lg-6 px-5">
+            <div className="col-lg-6 main-wrapper">
                 <VideoCard title={"Dr. Alama Hussain Madani"} image={vid1}/>
                 <VideoCard title={"Khursheed Ahmad Khan"} image={vid2}/>
             </div>
