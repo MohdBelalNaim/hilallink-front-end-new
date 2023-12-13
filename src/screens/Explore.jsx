@@ -64,7 +64,7 @@ return (
     <Navbar />
     <div className="container">
         <div className="row gx-0">
-            <div className="col-lg-3">&nbsp;</div>
+            <div className="col-lg-3 explore-mobile-extra">&nbsp;</div>
             <div className="col-lg-6 result-data-wrapper">
                 <div className="result-search-feild-wrapper">
                     <input type="text" className="form-control explore-search-feild" placeholder='Try searching here' />

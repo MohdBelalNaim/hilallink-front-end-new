@@ -133,14 +133,66 @@
     font-size: 22px;
     padding: 12px;
 }
+.community-group-icon{
+    font-size: 32px;
+    margin-left: 10px;
+}
 @media only screen and (max-width:600px){
     .result-data-wrapper{
         padding: 0px 0px;
     }
     .search-results-header{
         top: 0px !important;
+        font-size: 12px;
     }
     .result-search-feild-wrapper{
-        margin-top: 0px;
+        margin-top: 10px;
+    }
+    .search-result-type{
+        padding: 8px 10px;
+    }
+    .explore-search-feild{
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .searched-name{
+        font-size: 14px;
+    }
+    .searched-username{
+        font-size: 12px;
+    }
+    .follow-button{
+        padding: 5px 10px;
+    }
+    .search-people-img-wrapper{
+        height: 30px;
+        width: 30px;
+    }
+    .search-people-details{
+        padding: 0px 0px;
+    }
+    .search-result-header{
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .search-result-people{
+        padding: 8px 14px;
+    }
+    .searched-bio{
+        font-size: 12px;
+    }
+    .search-results-footer{
+        font-size: 12px;
+    }
+    .view-all-link{
+        font-size: 12px;
+    }
+    .explore-mobile-extra{
+        display: none;
+    }
+    .community-group-icon{
+        font-size: 24px;
+        margin-left: 6px;
+        
     }
 }

@@ -2,7 +2,7 @@
     background-color: white;
     padding: 14px;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 60px;
 }
 .message-item{
     display: flex;
@@ -53,6 +53,7 @@
     }
     .message-search-container{
         padding:8px;
+        margin-top: 10px;
     }
     .message-username{
         font-size: 12px;

@@ -9,7 +9,7 @@ const CommunityResultCard = (props) => {
             <div className="search-people-info">
                 <div>
                     <div className="search-people-img-wrapper">
-                        <i className="bi bi-people-fill" style={{"fontSize":32+"px","position":"relative","left":10+"px"}}></i>
+                        <i className="bi bi-people-fill community-group-icon"></i>
                     </div>
                 </div>
                 <div className="search-people-details">
