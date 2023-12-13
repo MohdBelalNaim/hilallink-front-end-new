@@ -16,6 +16,7 @@ import CommunityProfile from './screens/CommunityProfile';
 import UserProfile from './screens/UserProfile';
 import Communities from './screens/Communities';
 import Videos from './screens/Videos';
+import Notifications from './screens/Notifications';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/communities" element={<Communities/>} />
         <Route path="/user" element={<UserProfile/>} />
         <Route path="/videos" element={<Videos/>} />
+        <Route path="/mobile-notifications" element={<Notifications/>} />
       </Routes>
     </Router>
   );

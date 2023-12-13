@@ -116,9 +116,11 @@ return (
                 <i className="action-icon mobile-action-icons bi bi-play-btn-fill"></i>
             </div>
             </Link>
+            <Link to="/communities" style={{"color":"black"}}>
             <div className="action-icons">
                 <i className="action-icon mobile-action-icons bi bi-people-fill"></i>
             </div>
+            </Link>
             <div className="action-icons">
                 <div className="mobile-user-dp-wrapper">
                     <img src={avatar} alt="" className="img-fit" />
@@ -134,7 +136,9 @@ return (
             </div>
         </div>
         <div className="mobile-header-items">
+            <Link to="/mobile-notifications" style={{'color':'black'}}>
             <i className="bi bi-bell mobile-icon"></i>
+            </Link>
             <Link to="/messages" style={{'color':'black'}}>
             <i className="bi bi-chat mobile-icon"></i>
             </Link>

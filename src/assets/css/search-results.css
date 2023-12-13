@@ -10,8 +10,12 @@
     top: 60px;
     overflow: hidden;
     border-radius: 0px 0px 10px 10px;
+    overflow: scroll;
     
 }   
+.search-results-header::-webkit-scrollbar{
+    display: none !important;
+}
 .search-result-type{
     padding: 14px;
     cursor: pointer;
@@ -195,4 +199,5 @@
         margin-left: 6px;
         
     }
+    
 }

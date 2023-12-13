@@ -13,7 +13,7 @@ const Communities = () => {
         <div className="container">
             <div className="row gx-0">
                 <div className="col-lg-3"></div>
-                <div className="col-lg-6 px-5">
+                <div className="col-lg-6 communities-wrapper">
                 <div className="search-results-card community-result-card">
                     <div className="search-result-header">Communitites</div>
                     <div className="search-results-body">
