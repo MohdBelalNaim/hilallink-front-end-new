@@ -14,11 +14,11 @@
     background-color: white;
     border-radius: 8px;
     margin-top: 8px;
+    margin-bottom: 60px;
 }
 .message-image-wrapper{
     height: 50px;
     width: 50px;
-    background-color: red;
     border-radius: 50%;
 }
 .message-username{
@@ -46,4 +46,26 @@
     border: 1px solid lightgray;
     padding: 5px 9px;
     cursor: pointer;
+}
+@media only screen and (max-width:600px){
+    .message-search{
+        font-size: 14px;
+    }
+    .message-search-container{
+        padding:8px;
+    }
+    .message-username{
+        font-size: 12px;
+    }
+    .message-lastText{
+        font-size: 12px;
+    }
+    .message-image-wrapper{
+        height: 28px;
+        width: 28px;
+    }
+    .message-type-pill{
+        font-size: 10px;
+        padding: 10px 6;
+    }
 }

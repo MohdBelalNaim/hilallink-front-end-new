@@ -10,7 +10,7 @@ const Messages = () => {
     <div className="container gx-0">
       <div className="row gx-0">
         <div className="col-md-3"></div>
-        <div className="col-md-6 px-4">
+        <div className="col-md-6 main-wrapper">
           <div className="messages-wrapper">
             <div className="message-search-container">
               <input type="text" placeholder='Search for a message' className="message-search form-control" />
@@ -28,7 +28,7 @@ const Messages = () => {
                   </div>
                 </div>
                 <div className="message-sections">
-                  <div className="message-username">Dr. Alama Hussain Madani • 2 hours ago</div>
+                  <div className="message-username">Dr. Alama Hussain Madani</div>
                   <div className="message-lastText">This is a test message</div>
                 </div>
               </div>

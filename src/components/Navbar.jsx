@@ -96,20 +96,33 @@ return (
     }
     <div className="bottom-navbar">
         <div className="action-icons-wrapper">
-            <div className="action-icons house">
-                <i className="action-icon bi bi-house-door-fill"></i>
+            <Link to="/home" style={{"color":"black"}}>
+            <div className="action-icons">
+                <i className="action-icon mobile-action-icons bi bi-house-door-fill"></i>
+            </div>
+            </Link>
+            <Link to="/explore" style={{"color":"black"}}>
+            <div className="action-icons">
+                <i className="action-icon mobile-action-icons bi bi-search"></i>
+            </div>
+            </Link>
+            <Link to="/clips" style={{"color":"black"}}>
+            <div className="action-icons">
+                <i className="action-icon mobile-action-icons bi bi-film"></i>
+            </div>
+            </Link>
+            <Link to="/videos" style={{"color":"black"}}>
+            <div className="action-icons">
+                <i className="action-icon mobile-action-icons bi bi-play-btn-fill"></i>
+            </div>
+            </Link>
+            <div className="action-icons">
+                <i className="action-icon mobile-action-icons bi bi-people-fill"></i>
             </div>
             <div className="action-icons">
-                <i className="action-icon bi bi-film"></i>
-            </div>
-            <div className="action-icons">
-                <i className="action-icon bi bi-plus-circle-fill"></i>
-            </div>
-            <div className="action-icons">
-                <i className="action-icon bi bi-play-btn-fill"></i>
-            </div>
-            <div className="action-icons">
-                <i className="action-icon bi bi-bookmark-fill"></i>
+                <div className="mobile-user-dp-wrapper">
+                    <img src={avatar} alt="" className="img-fit" />
+                </div>
             </div>
         </div>
     </div>
@@ -117,12 +130,14 @@ return (
         <div className="mobile-header-items">
             <div className="mobile-logo-wrapper">
                 <img src={Logo} className='mobile-logo' alt="wbsite logo" />
+                <span>HilalLink</span>
             </div>
         </div>
         <div className="mobile-header-items">
-            <i className="bi bi-search mobile-icon"></i>
             <i className="bi bi-bell mobile-icon"></i>
+            <Link to="/messages" style={{'color':'black'}}>
             <i className="bi bi-chat mobile-icon"></i>
+            </Link>
         </div>
     </div>
     <div className="container-fluid navbar-top">

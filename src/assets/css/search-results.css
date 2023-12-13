@@ -10,6 +10,7 @@
     top: 60px;
     overflow: hidden;
     border-radius: 0px 0px 10px 10px;
+    
 }   
 .search-result-type{
     padding: 14px;
@@ -85,7 +86,7 @@
 .result-search-feild-wrapper{
     padding: 10px;
     background-color: #f0f1ee;
-    margin-top: 10px;
+    margin-top: 64px;
     border-radius: 10px 10px 0px 0px;
 }
 .explore-search-feild{
