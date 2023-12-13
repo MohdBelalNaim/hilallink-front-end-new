@@ -121,11 +121,13 @@ return (
                 <i className="action-icon mobile-action-icons bi bi-people-fill"></i>
             </div>
             </Link>
+            <Link to="/mobile-profile">
             <div className="action-icons">
                 <div className="mobile-user-dp-wrapper">
                     <img src={avatar} alt="" className="img-fit" />
                 </div>
             </div>
+            </Link>
         </div>
     </div>
     <div className="mobile-header">

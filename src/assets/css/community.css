@@ -92,12 +92,17 @@
     }
     .members-count{
         font-size: 12px;
-    }
-    .community-info-section img{
-        width: 70%;
+        margin-left: 10px;
     }
     .community-rules-card{
         width: 95%;
         margin-top: 20px;
+    }
+    .community-info{
+        justify-content: flex-start;
+    }
+    .madarsa-data-item{
+        padding: 10px;
+        font-size: 12px;
     }
 }

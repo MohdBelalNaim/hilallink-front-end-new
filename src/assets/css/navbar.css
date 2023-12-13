@@ -233,4 +233,14 @@
         height: 26px;
         width: 26px;
     }
+    /* Profile page */
+    .profile-box{
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        border-radius: 0px;
+        border-top: 1px solid lightgray;
+        padding-bottom: 120px;
+    }
 }

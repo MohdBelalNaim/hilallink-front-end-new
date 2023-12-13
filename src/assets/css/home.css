@@ -358,5 +358,35 @@
     .comment-data{
         font-size: 12px;
     }
-    
+    .feed-item-info{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }   
+    .reaction-count{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .reactions{
+        width: 30%;
+    }
+    .create-post-header{
+        padding: 10px;
+    }
+    .create-title{
+        font-size: 14px;
+    }
+    .draft{
+        font-size: 12px;
+    }
+    .placeholder-subsections{
+        font-size: 14px;
+    }
+    .sunnah{
+        margin-top: 10px;
+    }
+    .create-post-button{
+        padding: 4px 20px;
+        font-size: 14px;
+    }
 }
