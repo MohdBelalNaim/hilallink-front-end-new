@@ -96,13 +96,29 @@
     }
     .community-rules-card{
         width: 95%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .community-info{
         justify-content: flex-start;
     }
     .madarsa-data-item{
         padding: 10px;
+        font-size: 12px;
+    }
+    .community-rule-info{
+        font-size: 12px;
+    }
+    .community-rule-title{
+        font-size: 12px;
+    }
+    .community-accept-button{
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+    .community-rules-header{
+        align-items: center;
+    }
+    .community-rules-header span{
         font-size: 12px;
     }
 }
