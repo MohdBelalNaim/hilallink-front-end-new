@@ -63,10 +63,10 @@ return (
   :""
   }
   <Navbar />
-  <div className="container">
+  <div className="container community-main-container">
     <div className="row gx-0">
       <div className="col-lg-3"></div>
-      <div className="col-lg-6 px-4">
+      <div className="col-lg-6 main-wrapper community-main-wrapper">
         <div className="community-cover-image-wrapper">
           <img src={img1} alt="" className="community-cover-image" />
         </div>
@@ -80,7 +80,7 @@ return (
                 208K <span style={{"color":"gray"}}>Members</span>
               </div>
             </div>
-            <div className="community-info-section">
+            <div className="community-info-section community-follow-section">
               <i className="bi bi-three-dots-vertical madarsa-notification"></i>
               <i className="bi bi-bell madarsa-notification"></i>
               <button className="madarsa-follow-button" onClick={()=>setRules(true)}>Join</button>
@@ -94,6 +94,11 @@ return (
 
             Nurturing hearts and minds in the light of Quranic wisdom since 1980. Embracing knowledge,
             faith, and community. 📖🌟 #MadarsaHanfiya
+          </div>
+          <div className="mobile-profile-action-wrapper">
+            <button className="mobile-follow-button" onClick={()=>setRules(true)}>Join</button>
+            <i className="bi bi-bell-fill mobile-notification-icon"></i>
+            <i className="bi bi-three-dots-vertical mobile-notification-icon"></i>
           </div>
         </div>
         <div className="madarsa-data-content-wrapper">
