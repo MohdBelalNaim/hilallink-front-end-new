@@ -40,7 +40,7 @@
 .community-rules-card{
     width: 40%;
     background-color: white;
-    margin-top: 60px;
+    margin-top: 10px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -75,6 +75,31 @@
 }
 .community-main-container{
     margin-top: 60px;
+}
+.community-combined-info{
+    position: relative; 
+}
+.community-actions-dialog{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 50%;
+    z-index: 9999999;
+    overflow: hidden;
+}
+.community-dialog-options{
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.community-dialog-options i{
+    margin-right: 10px;
+}
+.community-dialog-options:hover{
+    background-color: lightgray;
 }
 @media only screen and (max-width:600px){
     .community-main-wrapper{

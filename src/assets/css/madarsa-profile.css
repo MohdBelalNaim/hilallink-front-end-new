@@ -180,4 +180,10 @@
     .madarsa-type-info-wrapper{
         display: none;
     }
+    .main-org-wrapper{
+        padding: 0px;
+    }
+    .madarsa-instant-actions{
+        display: none;
+    }
 }

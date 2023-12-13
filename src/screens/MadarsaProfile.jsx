@@ -17,7 +17,7 @@ return (
     <div className="container">
         <div className="row">
             <div className="col-lg-3"></div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 main-org-wrapper">
                 <div className="madarsa-details">
                     <div className="madarsa-cover">
                         <div className="madarsa-basics">
@@ -37,7 +37,7 @@ return (
                                         101K <span style={{"color":"gray"}}>Follower</span>
                                     </div>
                                 </div>
-                                <div className="madarsa-follower-item">
+                                <div className="madarsa-follower-item madarsa-instant-actions">
                                     <i className="bi bi-bell madarsa-notification"></i>
                                     <button className="madarsa-follow-button"> <i
                                             className="bi bi-person-plus-fill px-1"></i> Follow</button>
@@ -62,6 +62,11 @@ return (
                             </div>
                             <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right"></i>
                                 www.mhzquran.com</div>
+                        </div>
+                        <div className="mobile-profile-action-wrapper">
+                            <button className="mobile-follow-button">Follow</button>
+                            <i className="bi bi-bell-fill mobile-notification-icon"></i>
+                            <i className="bi bi-three-dots-vertical mobile-notification-icon"></i>
                         </div>
                     </div>
 
