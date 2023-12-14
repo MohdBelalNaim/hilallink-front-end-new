@@ -11,8 +11,10 @@ return (
   <div className="container">
     <div className="row">
       <div className="col-lg-3"></div>
-      <div className="col-lg-6" style={{"marginTop":10+"px"}}>
-        <PostWithPhotoDetails />
+      <div className="col-lg-6">
+        <div className="post-details-header">
+          <PostWithPhotoDetails />
+        </div>
 
         <div className="comment-wrapper rounded">
 

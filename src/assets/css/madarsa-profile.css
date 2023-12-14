@@ -69,7 +69,7 @@
 .madarsa-notification{
     all: unset;
     background-color: whitesmoke;
-    padding: 8px;
+    padding: 8px 10px;
     border-radius: 50%;
     margin-right: 10px;
 }

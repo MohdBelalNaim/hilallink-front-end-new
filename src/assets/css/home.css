@@ -301,6 +301,9 @@
 .main-wrapper{
     padding: 0px 52px;
 }
+.post-details-header{
+    margin-top: 60px;
+}
 @media only screen and (max-width:600px){
     .bottom-navbar{
         display: block;
@@ -388,5 +391,14 @@
     .create-post-button{
         padding: 4px 20px;
         font-size: 14px;
+    }
+    .post-details-header{
+        margin-top: 10px;
+    }
+    .comment-time{
+        font-size: 10px;
+    }
+    .comment-wrapper{
+        margin-bottom: 60px;
     }
 }

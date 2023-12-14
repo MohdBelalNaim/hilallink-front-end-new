@@ -60,7 +60,7 @@ return (
                             </div>
                             <div className="madarsa-type-info"> <i className="bi bi-geo-alt-fill"></i> Lucknow, India
                             </div>
-                            <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right"></i>
+                            <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right px-1"></i>
                                 www.mhzquran.com</div>
                         </div>
                         <div className="mobile-profile-action-wrapper">

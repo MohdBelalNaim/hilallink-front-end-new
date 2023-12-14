@@ -9,6 +9,7 @@ import img3 from '../assets/images/img3.jpg'
 const CommunityProfile = () => {
 const[rules,setRules] = useState(false)
 const[dialog,setDialog] = useState(false)
+const[mobileDialog,setMobileDialog] = useState(false)
 return (
 <>
   {
@@ -74,14 +75,14 @@ return (
         </div>
         <div className="community-combined-info">
           {
-            dialog?
-            <div className="community-actions-dialog shadow rounded">
-              <div className="community-dialog-options"> <i className="bi bi-bookmark-fill"></i> Save Post</div>
-              <div className="community-dialog-options"> <i className="bi bi-send-fill"></i> Share Post</div>
-              <div className="community-dialog-options"> <i className="bi bi-repeat"></i> Repost Post</div>
-              <div className="community-dialog-options"> <i className="bi bi-person-plus-fill"></i> Join Community</div>
-            </div>
-            :""
+          dialog?
+          <div className="community-actions-dialog shadow rounded">
+            <div className="community-dialog-options"> <i className="bi bi-bookmark-fill"></i> Save Post</div>
+            <div className="community-dialog-options"> <i className="bi bi-send-fill"></i> Share Post</div>
+            <div className="community-dialog-options"> <i className="bi bi-repeat"></i> Repost Post</div>
+            <div className="community-dialog-options"> <i className="bi bi-person-plus-fill"></i> Join Community</div>
+          </div>
+          :""
           }
           <div className="community-info-wrapper">
             <div className="community-info">
@@ -94,7 +95,8 @@ return (
                 </div>
               </div>
               <div className="community-info-section community-follow-section">
-                <i onClick={()=>setDialog(!dialog)} className="bi bi-three-dots-vertical madarsa-notification" style={{"cursor":"pointer"}}></i>
+                <i onClick={()=>setDialog(!dialog)} className="bi bi-three-dots-vertical madarsa-notification"
+                  style={{"cursor":"pointer"}}></i>
                 <i className="bi bi-bell madarsa-notification"></i>
                 <button className="madarsa-follow-button" onClick={()=>setRules(true)}>Join</button>
               </div>
@@ -109,9 +111,20 @@ return (
               faith, and community. 📖🌟 #MadarsaHanfiya
             </div>
             <div className="mobile-profile-action-wrapper">
+              { 
+                mobileDialog?
+                <div className="community-mobile-dialog shadow rounded">
+                  <div className="community-dialog-options-mobile"> <i className="bi bi-bookmark-fill"></i> Save Post</div>
+                  <div className="community-dialog-options-mobile"> <i className="bi bi-send-fill"></i> Share Post</div>
+                  <div className="community-dialog-options-mobile"> <i className="bi bi-repeat"></i> Repost Post</div>
+                  <div className="community-dialog-options-mobile"> <i className="bi bi-person-plus-fill"></i> Join Community
+                  </div>
+                </div>
+                :""
+              }
               <button className="mobile-follow-button" onClick={()=>setRules(true)}>Join</button>
-              <i className="bi bi-bell-fill mobile-notification-icon"></i>
-              <i className="bi bi-three-dots-vertical mobile-notification-icon"></i>
+              <i className="bi bi-bell-fill mobile-notification-icon" ></i>
+              <i className="bi bi-three-dots-vertical mobile-notification-icon" onClick={()=>setMobileDialog(!mobileDialog)}></i>
             </div>
           </div>
         </div>

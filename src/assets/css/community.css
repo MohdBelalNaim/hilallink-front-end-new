@@ -101,6 +101,22 @@
 .community-dialog-options:hover{
     background-color: lightgray;
 }
+.community-mobile-dialog{
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    z-index: 999999999999;
+    background-color: white;
+    width: 46%;
+}
+.community-dialog-options-mobile{
+    font-size: 12px;
+    padding: 10px;
+}
+.community-dialog-options-mobile i{
+    background-color: white;
+    padding: 0px 5px;
+}
 @media only screen and (max-width:600px){
     .community-main-wrapper{
         padding: 0px;
