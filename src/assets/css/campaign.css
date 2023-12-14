@@ -5,7 +5,7 @@
 .campaign-info-wrapper{
     border-radius: 8px;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 60px;
 }
 .campaign-header-image{
     height: 300px;
@@ -275,5 +275,8 @@
     .all-donors-card{
         width: 95%;
         margin-top: 0px;
+    }
+    .campaign-info-wrapper{
+        margin-top: 10px;
     }
 }

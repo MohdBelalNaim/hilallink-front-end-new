@@ -21,10 +21,20 @@ const [organisation,setOrganisation] = useState(false)
 const [explore,setExplore] = useState(true)
 const [community,setCommunity] = useState(false)
 
-function changeMarker(category){
-    let all = document.getElementsByClassName("search-result-type")
-    
-}
+const options = [
+    {
+        title:"Discover"
+    },
+    {
+        title:"People"
+    },
+    {
+        title:"Organisations"
+    },
+    {
+        title:"Communities"
+    }
+]
 
 function showPeople(category){
     setCommunity(false)
@@ -32,7 +42,6 @@ function showPeople(category){
     setExplore(false)
     setPeople(true)
     window.scrollTo(0, 0)
-    changeMarker(category)
 }
 function showExplore(category){
     setCommunity(false)
@@ -40,7 +49,6 @@ function showExplore(category){
     setExplore(true)
     setPeople(false)
     window.scrollTo(0, 0)
-    changeMarker(category)
 }
 function showCommunity(category){
     setCommunity(true)
@@ -48,7 +56,6 @@ function showCommunity(category){
     setExplore(false)
     setPeople(false)
     window.scrollTo(0, 0)
-    changeMarker(category)
 }
 function showOrganisation(category){
     setCommunity(false)
@@ -56,9 +63,27 @@ function showOrganisation(category){
     setExplore(false)
     setPeople(false)
     window.scrollTo(0, 0)
-    changeMarker(category)
 }
 
+const[active,setActive] = useState(0)
+function handleNavigation(index,type){
+    setActive(index)
+    
+    switch(type){
+        case "People":
+            showPeople()
+            break
+        case "Discover":
+            showExplore()
+            break
+        case "Organisations":
+            showOrganisation()
+            break
+        case "Communities":
+            showCommunity()
+            break
+    }
+}
 return (
 <>
     <Navbar />
@@ -70,10 +95,13 @@ return (
                     <input type="text" className="form-control explore-search-feild" placeholder='Try searching here' />
                 </div>
                 <div className="search-results-header" style={{"zIndex":9999999}}>
-                    <div className="search-result-type result-active" onClick={()=>showExplore("discover")} id="discover">Discover</div>
-                    <div className="search-result-type" onClick={()=>showPeople("people")} id="people">People</div>
-                    <div className="search-result-type" onClick={()=>showOrganisation("organisation")} id="organisation">Organisations</div>
-                    <div className="search-result-type" onClick={()=>showCommunity("communtiy")} id="community">Communities</div>
+                    {
+                        options.map((item,index)=>{
+                            return(
+                                <div className={`search-result-type ${active===index?'result-active':''} `} onClick={()=>handleNavigation(index,item.title)}>{item.title}</div>
+                            )
+                        })
+                    }
                 </div>
 
                 {
