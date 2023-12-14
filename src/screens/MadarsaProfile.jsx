@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import Navbar from '../components/Navbar'
 import '../assets/css/madarsa-profile.css'
 import PostWithPhoto from '../components/PostWithPhoto'
@@ -8,9 +8,10 @@ import CampaignCard from '../components/CampaignCard'
 import CampaignCardAlt from '../components/CampaignCardAlt'
 
 const MadarsaProfile = () => {
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
+const[mobileDialog,setMobileDialog] = useState(false)
 return (
 <>
     <Navbar />
@@ -37,9 +38,9 @@ return (
                                         101K <span style={{"color":"gray"}}>Follower</span>
                                     </div>
                                 </div>
-                                <div className="madarsa-follower-item madarsa-instant-actions">
-                                    <i className="bi bi-bell madarsa-notification"></i>
-                                    <button className="madarsa-follow-button"> <i
+                                <div className="madarsa-follower-item">
+                                    <i className="bi bi-bell madarsa-notification madarsa-instant-actions"></i>
+                                    <button className="madarsa-follow-button madarsa-instant-actions"> <i
                                             className="bi bi-person-plus-fill px-1"></i> Follow</button>
                                 </div>
                             </div>
@@ -54,19 +55,35 @@ return (
                             Nurturing hearts and minds in the light of Quranic wisdom since 1980. Embracing knowledge,
                             faith, and community. 📖🌟 #MadarsaHanfiya
                         </div>
+                        <div className="mobile-profile-action-wrapper">
+                            {
+                            mobileDialog?
+                            <div className="madarsa-mobile-dialog shadow rounded">
+                                <div className="community-dialog-options-mobile"> <i
+                                        className="bi bi-bookmark-fill"></i> Save Post</div>
+                                <div className="community-dialog-options-mobile"> <i className="bi bi-send-fill"></i>
+                                    Share Post</div>
+                                <div className="community-dialog-options-mobile"> <i className="bi bi-repeat"></i>
+                                    Repost Post</div>
+                                <div className="community-dialog-options-mobile"> <i
+                                        className="bi bi-person-plus-fill"></i> Join Community
+                                </div>
+                            </div>
+                            :""
+                            }
+                            <button className="mobile-follow-button">Join</button>
+                            <i className="bi bi-bell-fill mobile-notification-icon"></i>
+                            <i className="bi bi-three-dots-vertical mobile-notification-icon"
+                                onClick={()=>setMobileDialog(!mobileDialog)}></i>
+                        </div>
                         <div className="madarsa-type-info-wrapper">
                             <div className="madarsa-type-info"> <i className='bi bi-grid-fill'></i> Religious
                                 institution
                             </div>
                             <div className="madarsa-type-info"> <i className="bi bi-geo-alt-fill"></i> Lucknow, India
                             </div>
-                            <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right px-1"></i>
+                            <div className="madarsa-type-info"> <i className="bi bi-box-arrow-up-right"></i>
                                 www.mhzquran.com</div>
-                        </div>
-                        <div className="mobile-profile-action-wrapper">
-                            <button className="mobile-follow-button">Follow</button>
-                            <i className="bi bi-bell-fill mobile-notification-icon"></i>
-                            <i className="bi bi-three-dots-vertical mobile-notification-icon"></i>
                         </div>
                     </div>
 
@@ -78,7 +95,7 @@ return (
                         <div className="madarsa-data-item">Campaign</div>
                     </div>
                 </div>
-                <CampaignCardAlt/>
+                <CampaignCardAlt />
 
             </div>
             <div className="col-lg-3"></div>

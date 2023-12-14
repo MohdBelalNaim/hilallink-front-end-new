@@ -103,9 +103,9 @@
 }
 .community-mobile-dialog{
     position: absolute;
-    top: 250px;
+    top: 50px;
     right: 10px;
-    z-index: 999999999999;
+    z-index: 99999999;
     background-color: white;
     width: 46%;
 }

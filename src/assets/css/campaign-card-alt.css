@@ -5,6 +5,7 @@
     border-radius: 10px;
     overflow: hidden;
     margin-top: 10px;
+    z-index: -999999;
 }
 .campaign-card-alt-image{
     height: 100%;
