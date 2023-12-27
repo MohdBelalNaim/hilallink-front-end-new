@@ -172,7 +172,7 @@ return (
                 explore?
                 <>
                     <Link to="/campaign" style={{"textDecoration":"none","color":"black"}}>
-                    <CampaignCardAlt />
+                    <CampaignCardAlt img={img1} />
                     </Link>
                     <div className="search-results-card mt-1">
                         <div className="search-result-header">People</div>
