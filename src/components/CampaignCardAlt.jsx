@@ -2,12 +2,12 @@ import React from 'react'
 import '../assets/css/campaign-card-alt.css'
 import cardImage from '../assets/images/madarsa.webp'
 import { Link } from 'react-router-dom'
-const CampaignCardAlt = () => {
+const CampaignCardAlt = (props) => {
   return (
     <>
     <div className="campaign-card-alt-wrapper">
       <div className="campaign-card-alt-image-wrapper">
-        <img src={cardImage} alt="" className="campaign-card-alt-image" />
+        <img src={props.img} alt="" className="campaign-card-alt-image" />
       </div>
       <div className="campaign-card-info-alt">
         <div className="campaign-card-info-sections alt-1">

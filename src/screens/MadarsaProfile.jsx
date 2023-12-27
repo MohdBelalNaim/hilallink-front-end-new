@@ -6,6 +6,10 @@ import cover from '../assets/images/masjidalaqsa.jpeg'
 import avatar from '../assets/images/square.png'
 import CampaignCard from '../components/CampaignCard'
 import CampaignCardAlt from '../components/CampaignCardAlt'
+import img1 from '../assets/images/img1.jpg'
+import img2 from '../assets/images/img2.jpg'
+import img3 from '../assets/images/img3.jpg'
+import img4 from '../assets/images/madarsa.webp'
 
 const MadarsaProfile = () => {
 useEffect(()=>{
@@ -88,14 +92,17 @@ return (
                     </div>
 
                     <div className="madarsa-data-content-wrapper">
-                        <div className="madarsa-data-item active-madarsa-item">Home</div>
+                        <div className="madarsa-data-item">Home</div>
                         <div className="madarsa-data-item">Posts</div>
                         <div className="madarsa-data-item">Videos</div>
                         <div className="madarsa-data-item">Clips</div>
-                        <div className="madarsa-data-item">Campaign</div>
+                        <div className="madarsa-data-item active-madarsa-item">Campaign</div>
                     </div>
                 </div>
-                <CampaignCardAlt />
+                <CampaignCardAlt img={img4} />
+                <CampaignCardAlt img={img1} />
+                <CampaignCardAlt img={img2} />
+                <CampaignCardAlt img={img3} />
 
             </div>
             <div className="col-lg-3"></div>

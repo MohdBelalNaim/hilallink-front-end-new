@@ -14,7 +14,7 @@ const UserProfile = () => {
         window.scrollTo(0,0)
     },[])
 
-    const options = ["Home","Posts","Videos","Clips","Campaign"]
+    const options = ["Home","Posts","Videos","Clips"]
     const[active,setActive] = useState(0)
     return (
     <>

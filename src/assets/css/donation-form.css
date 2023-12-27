@@ -114,8 +114,8 @@
 @media only screen and (max-width:600px){
     .donation-form-container{
         width: 95%;
-        z-index: 99999999999999999999999999;
     }
+    
     .donation-pills{
         font-size: 12px;
         padding: 10px 14px;
