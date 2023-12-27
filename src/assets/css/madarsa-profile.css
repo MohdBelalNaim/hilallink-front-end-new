@@ -102,7 +102,9 @@
 .mobile-info-wrapper{
     display: none;
 }
-
+.active{
+    border-bottom: 4px solid black;
+}
 
 @media only screen and (max-width:600px){
     .notification-user-page{

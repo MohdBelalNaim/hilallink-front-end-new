@@ -23,6 +23,7 @@ function showAbout(){
 setUpdates(false)
 setAbout(true)
 }
+
 return (
 <>
   {
@@ -60,7 +61,7 @@ return (
         <div className="donation-form-header">
           <div className="donation-form-header-items"><i className="bi bi-x-circle" onClick={()=>setDonate(false)} style={{"color":"#b8b4b4","cursor":"pointer"}}></i>
           </div>
-          <div className="donation-form-header-items">Donation form</div>
+          <div className="donation-form-header-items donation-form-head-title">Donation form</div>
           <div className="donation-form-header-items">&nbsp;</div>
         </div>
         <div className="donation-form-body">
@@ -87,9 +88,9 @@ return (
                     by adding a tip of</div>
                   <div className="col-lg-5" style={{"paddingRight":20+"px"}}>
                     <div className="row gx-0 bg-light tip-amount-input-wrapper">
-                      <div className="col-lg-4"><input value="10%" className='tip-amount-input tip-one'
+                      <div className="col-lg-4 col-4"><input value="10%" className='tip-amount-input tip-one'
                           style={{"width":100+"%"}} type="text" /></div>
-                      <div className="col-lg-8"><input value="500.00" className='tip-amount-input'
+                      <div className="col-lg-8 col-8"><input value="500.00" className='tip-amount-input'
                           style={{"width":100+"%","paddingLeft":10+"px"}} type="text" /></div>
                     </div>
                     <div className="total-donation-amount">Total Amount INR 2200</div>

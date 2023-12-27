@@ -111,3 +111,69 @@
     padding: 10px 30px;
     border-radius: 10px;
 }
+@media only screen and (max-width:600px){
+    .donation-form-container{
+        width: 95%;
+        z-index: 99999999999999999999999999;
+    }
+    .donation-pills{
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+    .other-amount-wrapper{
+        padding: 10px;
+    }
+    .donation-tip-wrapper{
+        padding: 10px;
+    }
+    .donor-details-wrapper{
+        padding: 24px;
+    }
+    .donor-detail-input{
+        font-size: 12px;
+        padding: 6px 0px;
+    }
+    .donation-tip-title{
+        font-size: 12px;
+    }
+    .donation-form-head-title{
+        font-size: 14px;
+    }
+    .donation-form-header{
+        padding: 8px 10px;
+        align-items: center;
+    }
+    .other-amount{
+        font-size: 12px;
+    }
+    .other-amount-wrapper{
+        margin-bottom: 0px;
+    }
+    .tip-amount-input{
+        font-size: 12px;
+        padding: 6px;
+    }
+    .donation-pills-container{
+        padding: 14px 0px;
+    }
+    .donor-details-wrapper{
+        margin-top: 0px;
+    }
+    .donation-tip-input-wrapper{
+        margin-top: 0px !important;
+    }
+    .donation-form-container{
+        margin-top: 0px;
+    }
+    .pay-donation-wrapper{
+        width: 100%;
+    }   
+    .proceed-to-pay{
+        font-size: 12px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .tip-amount-input-wrapper{
+        margin-top: 6px;
+    }
+}
